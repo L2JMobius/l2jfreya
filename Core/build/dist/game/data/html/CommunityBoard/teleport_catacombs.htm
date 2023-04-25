@@ -1,0 +1,167 @@
+﻿<html>
+<title>%servername%</title>
+<body>
+<br><br>
+<img src="L2UI.SquareGray" width=785 height=1>
+<table width=780 height=50 bgcolor=171612>
+	<tr>
+		<td fixwidth=5></td>
+		<td fixwidth=32 height=42><img src=L2UI_CT1.Icon_df_Min_Minimap width=32 height=32></td><td fixwidth=500><font name="hs12" color=00CC00>Global Teleportation station.</font><br1>
+		<font color=LEVEL name=hs9>Go where you want! Fast and Cheap! </font></td>
+	</tr>
+</table>
+<center>
+<img src="L2UI.SquareGray" width=785 height=1><br1>
+<table width=680 height=404>
+	<tr>
+		<td>
+			<table cellpadding=0 cellspacing=1 width=279 height=82 bgcolor=555555>
+				<tr>
+					<td align=center>
+						<table cellpadding=0 cellspacing=1 width=280 height=80 bgcolor=000000>
+							<tr>
+								<td align=center>
+									<table>
+										<tr>
+											<td align=center>%XP%<br1>%SP%<br1>%PXP%<br1>%PSP%<br></td>
+											<td align=center>%DROP%<br1>%ADENA%<br1>%SPOIL%<br1>%QR%<br></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=279 height=32 bgcolor=555555>
+				<tr>
+					<td align=center>
+						<table cellpadding=0 cellspacing=1 width=280 height=30 bgcolor=000000>
+							<tr><td align=center>Player's: %online% Trader's: %traders% Total: %total%</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=279 height=280 bgcolor=555555>
+			<tr>
+				<td align=center>
+				<table cellpadding=0 cellspacing=1 width=281 height=278 bgcolor=000000>
+					<tr><td></td><td></td><td><br></td></tr>
+					<tr><td align=center>Party Refuse</td><td align=center>[ %@PARTY_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @PARTY_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Trade Refuse</td><td align=center>[ %@TRADE_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @TRADE_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Buffs Refuse</td><td align=center>[ %@BUFFS_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @BUFFS_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>PM Refuse</td><td align=center>[ %@PM_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @PM_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Gain XP/SP</td><td align=center>[ %@GAIN_XP_SP% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @GAIN_XP_SP" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto Loot</td><td align=center>[ %@AUTO_LOOT% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @AUTO_LOOT" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto. SS</td><td align=center>[ %@AUTO_SS% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @AUTO_SS" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Dress Me</td><td align=center>[ %enabled% ]</td><td align=center><button value="Change" action="bypass -h changedressmestatus" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Red Sky when die</td><td align=center>[ %@RED_SKY_DIE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @RED_SKY_DIE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto ToD</td><td align=center></td><td align=center><button value="Open All" action="bypass -h _bbstopchange @AUTO_TOD" width="70"  height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+				</table>
+			</td></tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=270>
+			<tr>
+				<td><button value="Report Bug/Bot or missing." action="bypass -h _bbstop;report_bug_bot" width=280 height=35 back="L2UI_CT1.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Gauge_DF_Attribute_Fire"></td>
+			</tr>
+			</table>
+		</td>
+		<td>
+		<center>
+		<table cellpadding=0 cellspacing=1 width=470 height=32 bgcolor=555555>
+			<tr><td align=center>
+				<table cellpadding=0 cellspacing=1 width=470 height=30 bgcolor=000000>
+					<tr>
+						<td align=center><button value="HOME" action="bypass -h _bbshome" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="SHOP" action="bypass -h _bbstop;gmshop_1;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="BUFFER" action="bypass -h _bbstop;buffer_1;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="RANKING" action="bypass -h _show_stats;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="TELEPORTS" action="bypass -h _bbsteleport;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="DRESS ME" action="bypass -h _bbsdressme;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+		<br>
+		<br>
+		<center>
+		<table>
+			<tr>
+				<td>
+					<button value="Catacomb of the Heretic" action="bypass -h _bbsteleport;teleport; 42514 143917 -5385  10000" width=160 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+				 Level 30~40 monsters.
+					<br1>
+					<img src="L2UI.SquareGray" width=300 height=1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Catacomb of the Branded" action="bypass -h _bbsteleport;teleport; 45770 170299 -4985  10000" width=160 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					Level 40~50 monsters.
+					<br1>
+					<img src="L2UI.SquareGray" width=300 height=1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Catacomb of the Apostate" action="bypass -h _bbsteleport;teleport; 77225 78362 -5119  10000" width=160 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					Level 50~60 monsters.
+					<br1>
+					<img src="L2UI.SquareGray" width=300 height=1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Catacomb of the Witch" action="bypass -h _bbsteleport;teleport; 139965 79678 -5433  10000" width=160 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					Level 60~70 monsters.
+					<br1>
+					<img src="L2UI.SquareGray" width=300 height=1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Catacomb of Dark Omens" action="bypass -h _bbsteleport;teleport; -19931 13502 -4905  10000" width=160 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					Level 70~80 monsters.
+					<br1>
+					<img src="L2UI.SquareGray" width=300 height=1>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="Catacomb of Forbidden" action="bypass -h _bbsteleport;teleport; 113429 84540 -6545  10000" width=160 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+				</td>
+				<td>
+					Level 70~80 monsters.
+					<br1>
+					<img src="L2UI.SquareGray" width=300 height=1>
+				</td>
+			</tr>
+		</table>
+	</center>
+	<br>
+		<table width=470 height=40>
+			<tr><td align=center><img src="L2UI.SquareGray" width=450 height=2></td></tr>
+			<tr>
+				<td align=center>
+				<br>
+				<button value="" action="bypass -h _bbstop;teleport_index" width=64 height=32 back="L2UI_CT1.Inventory_DF_Btn_RotateRight" fore="L2UI_CT1.Inventory_DF_Btn_RotateRight">
+				</td>
+			</tr>
+		</table>
+		</center>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+

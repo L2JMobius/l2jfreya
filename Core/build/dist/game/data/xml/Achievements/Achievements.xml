@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<list>
+	<achievement id="1" name="Get level 10" description="Gain level 10" reward="9142,5" minLevel="10"/>
+	<achievement id="2" name="Get level 20" description="Gain level 20" reward="9142,5" minLevel="20"/>
+	<achievement id="3" name="Get level 30" description="Gain level 30" reward="9142,5" minLevel="30"/>
+	<achievement id="4" name="Get level 40" description="Gain level 40" reward="9142,5" minLevel="40"/>
+	<achievement id="5" name="Get level 50" description="Gain level 50" reward="9142,5" minLevel="50"/>
+	<achievement id="6" name="Get level 60" description="Gain level 60" reward="9142,5" minLevel="60"/>
+	<achievement id="7" name="Get level 70" description="Gain level 70" reward="9142,5" minLevel="70"/>
+	<achievement id="8" name="Get level 80" description="Gain level 80" reward="9142,5" minLevel="80"/>
+	<achievement id="9" name="Get level 85" description="Gain level 85" reward="9142,5" minLevel="85"/>
+	
+	<achievement id="10" name="Be a Hero" description="Gain hero status" reward="9142,10" mustBeHero="true"/>
+	<achievement id="11" name="Be a Noble" description="Gain noblesse status" reward="9142,10" mustBeNoble="true"/>
+	
+	<achievement id="12" name="Enchanter +10" description="Gain a 10 weapon" reward="9142,15" minWeaponEnchant="10" />
+	<achievement id="13" name="Enchanter +15" description="Gain a 15 weapon" reward="9142,15" minWeaponEnchant="15" />
+	<achievement id="14" name="Enchanter +20" description="Gain a 20 weapon" reward="9142,15" minWeaponEnchant="20" />
+	<achievement id="15" name="Enchanter +25" description="Gain a 25 weapon" reward="9142,15" minWeaponEnchant="25" />
+	
+	<achievement id="16" name="Warrior 25 PvPs" description="Gain 25 PvPs" reward="9142,15" minPvPCount="25"/>
+	<achievement id="17" name="Warrior 50 PvPs" description="Gain 50 PvPs" reward="9142,15" minPvPCount="50"/>
+	<achievement id="18" name="Warrior 150 PvPs" description="Gain 100 PvPs" reward="9142,15" minPvPCount="150"/>
+	<achievement id="19" name="Warrior 400 PvPs" description="Gain 250 PvPs" reward="9142,15" minPvPCount="400"/>
+	
+	<achievement id="20" name="Commander" description="Be a clan leader of a level 8 clan" reward="9142,10" mustBeClanLeader="true" minClanLevel="8"/>
+	
+	<achievement id="21" name="Killer 25 PKs" description="Gain 25 PKs" reward="9142,15" minPkCount="25"/>
+	<achievement id="22" name="Killer 50 PKs" description="Gain 50 PKs" reward="9142,15" minPkCount="50"/>
+	<achievement id="23" name="Killer 150 PKs" description="Gain 100 PKs" reward="9142,15" minPkCount="150"/>
+	<achievement id="24" name="Killer 400 PKs" description="Gain 250 PKs" reward="9142,15" minPkCount="400"/>
+	
+	<achievement id="25" name="Master of Classes" description="Have 3 subclasses" reward="9142,5" minSubclassCount="3"/>
+	
+	<achievement id="26" name="Vegetarian Dealer" description="Bring 200 Sprignant fruits" reward="9142,15" itemAmmount="8787,200"/>
+	
+	<achievement id="27" name="Gamer 10 Days" description="Be online for 10 days" reward="9142,10" minOnlineTime="10"/>
+	<achievement id="28" name="Gamer 50 Days" description="Be online for 50 days" reward="9142,10" minOnlineTime="50"/>
+	<achievement id="29" name="Gamer 100 Days" description="Be online for 100 days" reward="9142,10" minOnlineTime="100"/>
+	<achievement id="30" name="One year online" description="Be online for 365 days" reward="9142,10" minOnlineTime="365"/>
+	
+	<achievement id="31" name="Conqueror" description="Be clan leader of a clan level 8 that owns a castle" reward="9142,10" lordOfCastle="true" minClanLevel="8" mustBeClanLeader="true"/>
+	
+	<achievement id="32" name="Skill Enchanter +10" description="Have a +10 skill" reward="9142,15" minSkillEnchant="10"/>
+	<achievement id="33" name="Skill Enchanter +15" description="Have a +15 skill" reward="9142,15" minSkillEnchant="15"/>
+	<achievement id="34" name="Skill Enchanter +20" description="Have a +20 skill" reward="9142,15" minSkillEnchant="20"/>
+	<achievement id="35" name="Skill Enchanter +25" description="Have a +25 skill" reward="9142,15" minSkillEnchant="25"/>
+	
+	<achievement id="36" name="Famous" description="Be clean leader of a level 8 clan with 100,000 clan reputation points" reward="9142,15" minClanLevel="8" crpAmmount="100000" mustBeClanLeader="true"/>
+	
+	<achievement id="37" name="Are you legend ?" description="Have hero status for 15 periods" reward="9142,15" minHeroCount="15"/>
+	
+	<achievement id="38" name="ToI Master" description="Kill Hallate, Kernon and Golkonda within 24hours" reward="9142,5" raidToKill="25220" raidToKill1="25054" raidToKill2="25126"/>
+	
+	<achievement id="39" name="Baium Master" description="Kill Baium and be level 80" reward="9142,5" raidToKill="29020" minLevel="80" />
+	
+	<achievement id="40" name="Antharas Master" description="Kill Antharas and be level 80" reward="9142,5" raidToKill="29019" minLevel="80" />
+	
+	<achievement id="41" name="Valakas Master" description="Kill Valakas and be level 80" reward="9142,10" raidToKill="29028" minLevel="80" />
+	
+	<achievement id="42" name="Raid Hunter" description="Claim 1,200 Raid points and be lvl 78" reward="9142,10" minRaidPoints="1200" minLevel="78" />
+	
+	<achievement id="43" name="Dominator" description="get 1,500 event kills" reward="9142,15" eventKills="1500" />
+	
+	<achievement id="44" name="Winner of events" description="get 250 event wins" reward="9142,15" eventWins="250" />
+	
+	<achievement id="45" name="Eventor" description="play in 250 events" reward="9142,10" events="250" />
+	
+	<achievement id="46" name="Personal Experiences" description="Complete all personal achievements" reward="9142,40" CompleteAchievements="42" />
+	
+	<achievement id="47" name="Master of achievements" description="Complete all achievements" reward="9142,60" CompleteAchievements="46" />
+	</list>

@@ -1,0 +1,169 @@
+<html>
+<title>%servername%</title>
+<body>
+<br><br>
+<img src="L2UI.SquareGray" width=785 height=1>
+<table width=780 height=50 bgcolor=171612>
+	<tr>
+		<td fixwidth=5></td>
+		<td fixwidth=32 height=42><img src=Icon.action031 width=32 height=32></td><td fixwidth=500><font name="hs12" color=00CC00>Dress Me - blame your enemy with fake visual</font><br1>
+		<font color=LEVEL name=hs9>Dress me status: %enabled% </font></td>
+	</tr>
+</table>
+<center>
+<img src="L2UI.SquareGray" width=785 height=1><br1>
+<table width=680 height=404>
+	<tr>
+		<td>
+			<table cellpadding=0 cellspacing=1 width=279 height=82 bgcolor=555555>
+				<tr>
+					<td align=center>
+						<table cellpadding=0 cellspacing=1 width=280 height=80 bgcolor=000000>
+							<tr>
+								<td align=center>
+									<table>
+										<tr>
+											<td align=center>%XP%<br1>%SP%<br1>%PXP%<br1>%PSP%<br></td>
+											<td align=center>%DROP%<br1>%ADENA%<br1>%SPOIL%<br1>%QR%<br></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=279 height=32 bgcolor=555555>
+				<tr>
+					<td align=center>
+						<table cellpadding=0 cellspacing=1 width=280 height=30 bgcolor=000000>
+							<tr><td align=center>Player's: %online% Trader's: %traders% Total: %total%</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=279 height=280 bgcolor=555555>
+			<tr>
+				<td align=center>
+				<table cellpadding=0 cellspacing=1 width=281 height=278 bgcolor=000000>
+					<tr><td></td><td></td><td><br></td></tr>
+					<tr><td align=center>Party Refuse</td><td align=center>[ %@PARTY_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @PARTY_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Trade Refuse</td><td align=center>[ %@TRADE_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @TRADE_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Buffs Refuse</td><td align=center>[ %@BUFFS_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @BUFFS_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>PM Refuse</td><td align=center>[ %@PM_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @PM_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Gain XP/SP</td><td align=center>[ %@GAIN_XP_SP% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @GAIN_XP_SP" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto Loot</td><td align=center>[ %@AUTO_LOOT% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @AUTO_LOOT" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto. SS</td><td align=center>[ %@AUTO_SS% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @AUTO_SS" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Dress Me</td><td align=center>[ %enabled% ]</td><td align=center><button value="Change" action="bypass -h changedressmestatus" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Red Sky when die</td><td align=center>[ %@RED_SKY_DIE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @RED_SKY_DIE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto ToD</td><td align=center></td><td align=center><button value="Open All" action="bypass -h _bbstopchange @AUTO_TOD" width="70"  height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+				</table>
+			</td></tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=270>
+			<tr>
+				<td><button value="Report Bug/Bot or missing." action="bypass -h _bbstop;report_bug_bot" width=280 height=35 back="L2UI_CT1.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Gauge_DF_Attribute_Fire"></td>
+			</tr>
+			</table>
+		</td>
+		<td align=center>
+		<table cellpadding=0 cellspacing=1 width=470 height=32 bgcolor=555555>
+			<tr><td align=center>
+				<table cellpadding=0 cellspacing=1 width=470 height=30 bgcolor=000000>
+					<tr>
+						<td align=center><button value="HOME" action="bypass -h _bbshome" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="SHOP" action="bypass -h _bbstop;gmshop_1;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="BUFFER" action="bypass -h _bbstop;buffer_1;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="RANKING" action="bypass -h _show_stats;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="TELEPORTS" action="bypass -h _bbsteleport;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="DRESS ME" action="bypass -h _bbsdressme;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+		<br><br>
+		<table cellpadding=0 cellspacing=2 width=200 height=30 bgcolor=555555>
+			<tr>
+				<td align=center>
+					<table width=199 height=26 bgcolor=000000>
+						<tr>
+							<td align=center>
+							<font name=hs9 color=LEVEL>Select your armor</font>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br><br>
+		<table cellpadding=0 cellspacing=1 height=240 bgcolor=555555>
+			<tr>
+				<td align=left>
+					<table width=170 height=238 bgcolor=000000>
+						<tr>
+							<td align=center><font name=hs9 color=LEVEL>Name</font></td>
+							<td align=center><font name=hs9 color=ff00ff>H</font></td>
+							<td align=center><font name=hs9 color=99cc00>L</font></td>
+							<td align=center><font name=hs9 color=00ff99>R</font></td>
+						</tr>
+						<tr>
+							<td align=center><font name=hs9>Vorpal</td>
+							<td align=center><button value="" action="bypass -h vorpal_heavy" width=32 height=32 back="icon.armor_t94_u_i03" fore="icon.armor_t94_u_i03"></td>
+							<td align=center><button value="" action="bypass -h vorpal_light" width=32 height=32 back="icon.armor_t95_u_i03" fore="icon.armor_t95_u_i03"></td>
+							<td align=center><button value="" action="bypass -h vorpal_robe" width=32 height=32 back="icon.armor_t96_u_i03" fore="icon.armor_t96_u_i03"></td>
+						</tr>
+						<tr>
+							<td align=center>Elegia</td>
+							<td align=center><button value="" action="bypass -h elegia_heavy" width=32 height=32 back="icon.armor_t97_u_i00" fore="icon.armor_t97_u_i00"></td>
+							<td align=center><button value="" action="bypass -h elegia_light" width=32 height=32 back="icon.armor_t98_u_i00" fore="icon.armor_t98_u_i00"></td>
+							<td align=center><button value="" action="bypass -h elegia_robe" width=32 height=32 back="icon.armor_t99_u_i00" fore="icon.armor_t99_u_i00"></td>
+						</tr>
+						<tr>
+							<td align=center>Vesper</td>
+							<td align=center><button value="" action="bypass -h vesper_heavy" width=32 height=32 back="icon.armor_t94_u_i00" fore="icon.armor_t94_u_i00"></td>
+							<td align=center><button value="" action="bypass -h vesper_light" width=32 height=32 back="icon.armor_t95_u_i00" fore="icon.armor_t95_u_i00"></td>
+							<td align=center><button value="" action="bypass -h vesper_robe" width=32 height=32 back="icon.armor_t96_u_i00" fore="icon.armor_t96_u_i00"></td>
+						</tr>
+						<tr>
+							<td align=center>Noble V.</td>
+							<td align=center><button value="" action="bypass -h vesper_noble_heavy" width=32 height=32 back="icon.armor_t94_u_i01" fore="icon.armor_t94_u_i01"></td>
+							<td align=center><button value="" action="bypass -h vesper_noble_light" width=32 height=32 back="icon.armor_t95_u_i01" fore="icon.armor_t95_u_i01"></td>
+							<td align=center><button value="" action="bypass -h vesper_noble_robe" width=32 height=32 back="icon.armor_t96_u_i01" fore="icon.armor_t96_u_i01"></td>
+						</tr>
+						<tr>
+							<td align=center>Dynasty</td>
+							<td align=center><button value="" action="bypass -h dynasty_heavy" width=32 height=32 back="icon.armor_dynasty_platinum_plate_weapon_i00" fore="icon.armor_dynasty_platinum_plate_weapon_i00"></td>
+							<td align=center><button value="" action="bypass -h dynasty_light" width=32 height=32 back="icon.armor_dynasty_jewelleather_mail_dagger_i00" fore="icon.armor_dynasty_jewelleather_mail_dagger_i00"></td>
+							<td align=center><button value="" action="bypass -h dynasty_robe" width=32 height=32 back="icon.armor_dynasty_silver_satin_tunic_healer_i00" fore="icon.armor_dynasty_silver_satin_tunic_healer_i00"></td>
+						</tr>
+						<tr>
+							<td align=center>Moirai</font></td>
+							<td align=center><button value="" action="bypass -h moirai_heavy" width=32 height=32 back="icon.armor_t100_u_i00" fore="icon.armor_t100_u_i00"></td>
+							<td align=center><button value="" action="bypass -h moirai_light" width=32 height=32 back="icon.armor_t101_u_i00" fore="icon.armor_t101_u_i00"></td>
+							<td align=center><button value="" action="bypass -h moirai_robe" width=32 height=32 back="icon.armor_t102_u_i00" fore="icon.armor_t102_u_i00"></td>
+						</tr>
+					</table>
+				</td>
+				<td align=center>
+					<table width=170 bgcolor=000000>
+						<tr>
+							<td align=center><font color=FF9900>Imperial Crusader -> </font></td>
+							<td><button value="" action="bypass -h imperial" width=32 height=32 back="icon.armor_t88_u_i00" fore="icon.armor_t88_u_i00"></td>
+						</tr>
+						<tr>
+							<td align=center><font color=FF0000>Draconic Armor -> </font></td>
+							<td><button value="" action="bypass -h draconic" width=32 height=32 back="icon.armor_t89_ul_i00" fore="icon.armor_t89_ul_i00"></td>
+						</tr>
+						<tr>
+							<td align=center><font color=F2F2F2>Major Arcana -> </font></td>
+							<td><button value="" action="bypass -h major_arcana" width=32 height=32 back="icon.armor_t90_ul_i00" fore="icon.armor_t90_ul_i00"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<button value="Back to main" action="bypass -h _bbsdressme;" width="150" height="30" back="Button_DF_Down" fore="Button_DF">
+</body>
+</html>
+

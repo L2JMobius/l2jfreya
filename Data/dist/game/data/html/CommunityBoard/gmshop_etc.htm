@@ -1,0 +1,134 @@
+﻿<html>
+<title>%servername%</title>
+<body>
+<br><br>
+<img src="L2UI.SquareGray" width=785 height=1>
+<table width=780 height=50 bgcolor=171612>
+	<tr>
+		<td fixwidth=5></td>
+		<td fixwidth=32 height=42><img src=L2UI_CT1.Icon_df_Min_MacroEdit width=32 height=32></td><td fixwidth=500><font name="hs12" color=00CC00>You missing something?</font><br1>
+		<font color=LEVEL name=hs9>Check my store. I have almost all. </font></td>
+	</tr>
+</table>
+<center>
+<img src="L2UI.SquareGray" width=785 height=1><br1>
+<table width=680 height=404>
+	<tr>
+		<td>
+			<table cellpadding=0 cellspacing=1 width=279 height=82 bgcolor=555555>
+				<tr>
+					<td align=center>
+						<table cellpadding=0 cellspacing=1 width=280 height=80 bgcolor=000000>
+							<tr>
+								<td align=center>
+									<table>
+										<tr>
+											<td align=center>%XP%<br1>%SP%<br1>%PXP%<br1>%PSP%<br></td>
+											<td align=center>%DROP%<br1>%ADENA%<br1>%SPOIL%<br1>%QR%<br></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=279 height=32 bgcolor=555555>
+				<tr>
+					<td align=center>
+						<table cellpadding=0 cellspacing=1 width=280 height=30 bgcolor=000000>
+							<tr><td align=center>Player's: %online% Trader's: %traders% Total: %total%</td></tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=279 height=280 bgcolor=555555>
+			<tr>
+				<td align=center>
+				<table cellpadding=0 cellspacing=1 width=281 height=278 bgcolor=000000>
+					<tr><td></td><td></td><td><br></td></tr>
+					<tr><td align=center>Party Refuse</td><td align=center>[ %@PARTY_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @PARTY_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Trade Refuse</td><td align=center>[ %@TRADE_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @TRADE_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Buffs Refuse</td><td align=center>[ %@BUFFS_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @BUFFS_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>PM Refuse</td><td align=center>[ %@PM_REFUSE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @PM_REFUSE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Gain XP/SP</td><td align=center>[ %@GAIN_XP_SP% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @GAIN_XP_SP" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto Loot</td><td align=center>[ %@AUTO_LOOT% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @AUTO_LOOT" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto. SS</td><td align=center>[ %@AUTO_SS% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @AUTO_SS" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Dress Me</td><td align=center>[ %enabled% ]</td><td align=center><button value="Change" action="bypass -h changedressmestatus" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Red Sky when die</td><td align=center>[ %@RED_SKY_DIE% ]</td><td align=center><button value="Change" action="bypass -h _bbstopchange @RED_SKY_DIE" width="60" height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+					<tr><td align=center>Auto ToD</td><td align=center></td><td align=center><button value="Open All" action="bypass -h _bbstopchange @AUTO_TOD" width="70"  height="20" back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td></tr>
+				</table>
+			</td></tr>
+			</table>
+			<table cellpadding=0 cellspacing=1 width=270>
+			<tr>
+				<td><button value="Report Bug/Bot or missing." action="bypass -h _bbstop;report_bug_bot" width=280 height=35 back="L2UI_CT1.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Gauge_DF_Attribute_Fire"></td>
+			</tr>
+			</table>
+		</td>
+		<td>
+	<table cellpadding=0 cellspacing=1 width=470 height=32 bgcolor=555555>
+			<tr><td align=center>
+				<table cellpadding=0 cellspacing=1 width=470 height=30 bgcolor=000000>
+					<tr>
+						<td align=center><button value="HOME" action="bypass -h _bbshome" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="SHOP" action="bypass -h _bbstop;gmshop_1;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="BUFFER" action="bypass -h _bbstop;buffer_1;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="RANKING" action="bypass -h _show_stats;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="TELEPORTS" action="bypass -h _bbsteleport;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+						<td align=center><button value="DRESS ME" action="bypass -h _bbsdressme;" width="70" height="28" back="Tab_DF_Tab_Unselected" fore="Tab_DF_Tab_Unselected_Over"></td>
+					</tr>
+				</table>
+			</td></tr>
+		</table>
+		<br>
+		<center>
+		<table width=470>
+			<tr><td align=center>
+				<table width=460>
+					<tr>
+						<td align=center><img src="icon.etc_spell_shot_gold_i01" width=32 height=32><br1><button value="Shots" action="bypass -h _bbsmultisell;gmshop_etc;13001" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_blessed_scrl_of_ench_wp_s_i05" width=32 height=32><br1><button value="Scrolls" action="bypass -h _bbsmultisell;gmshop_etc;13002" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_hot_spring_mineral_i00" width=32 height=32><br1><button value="Potions" action="bypass -h _bbsmultisell;gmshop_etc;13003" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.accessory_iron_circlet_i00" width=32 height=32><br1><button value="Masks" action="bypass -h _bbsmultisell;gmshop_etc;13004" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_dragons_blood_i00" width=32 height=32><br1><button value="Dyes" action="bypass -h _bbsmultisell;gmshop_etc;13005" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+					</tr>
+				</table>
+				<table width=460>
+					<tr>
+						<td align=center><img src="icon.feud_lord_cloak_i00" width=32 height=32><br1><button value="Cloaks" action="bypass -h _bbsmultisell;gmshop_etc;13006" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_shinecryst_red_i00" width=32 height=32><br1><button value="Crystals" action="bypass -h _bbsmultisell;gmshop_etc;13007" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_pet_arms_i05" width=32 height=32><br1><button value="Pets" action="bypass -h _bbsmultisell;gmshop_etc;14001" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_mineral_unique_i03" width=32 height=32><br1><button value="Life Stones" action="bypass -h _bbsmultisell;gmshop_etc;14002" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_fire_stone_i00" width=32 height=32><br1><button value="Att. Stones" action="bypass -h _bbsmultisell;gmshop_etc;14003" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+					</tr>
+				</table>
+				<table width=460>
+					<tr>
+						<td align=center><img src="icon.weapon_voodoo_doll_i01" width=32 height=32><br1><button value="Tattoes" action="bypass -h _bbsmultisell;gmshop_etc;14004" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_dash_potion_i00" width=32 height=32><br1><button value="Quests" action="bypass -h _bbsmultisell;gmshop_etc;14005" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_codex_of_giant_i00" width=32 height=32><br1><button value="Books" action="bypass -h _bbsmultisell;gmshop_etc;14006" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_coins_blue_i00" width=32 height=32><br1><button value="Currency" action="bypass -h _bbsmultisell;gmshop_etc;14007" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_coke_i00" width=32 height=32><br1><button value="Events" action="bypass _bbsmultisell;gmshop_etc;15005" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+					</tr>
+				</table>
+				<table width=460>
+					<tr>
+						<td align=center><img src="icon.armor_belt_i01" width=32 height=32><br1><button value="Belts" action="bypass -h _bbsmultisell;gmshop_etc;15004" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.arcana_sigil_i00" width=32 height=32><br1><button value="Sigils" action="bypass -h _bbsmultisell;gmshop_etc;15003" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_paper_blue_i00" width=32 height=32><br1><button value="Clans" action="bypass -h _bbsmultisell;gmshop_etc;15002" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+						<td align=center><img src="icon.etc_raid_g_i00" width=32 height=32><br1><button value="Raids Eggs" action="bypass -h _bbsmultisell;gmshop_etc;15001" width=80 height=25 back="Button_DF_Large_Down" fore="Button_DF_Large_Over"></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<button value="" action="bypass -h _bbstop;gmshop_1;" width="64" height="64" back="L2UI_CT1.ICON_DF_CHARACTERTURN_RIGHT_DOWN" fore="L2UI_CT1.ICON_DF_CHARACTERTURN_RIGHT_OVER">
+		</center>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
