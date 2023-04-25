@@ -31,11 +31,11 @@ public class EvoMonsters extends L2AttackableAIScript
 	private static final Map<Integer, Integer> ANGELSPAWNS = new HashMap<>();
 	static
 	{
-		ANGELSPAWNS.put(20830, 20859);
-		ANGELSPAWNS.put(21067, 21068);
-		ANGELSPAWNS.put(21062, 21063);
-		ANGELSPAWNS.put(20831, 20860);
-		ANGELSPAWNS.put(21070, 21071);
+		ANGELSPAWNS.put(50001, 50002);
+		ANGELSPAWNS.put(50003, 50004);
+		ANGELSPAWNS.put(50005, 50006);
+		ANGELSPAWNS.put(50007, 50008);
+		ANGELSPAWNS.put(50009, 50010);
 	}
 	
 	public EvoMonsters()
@@ -43,11 +43,11 @@ public class EvoMonsters extends L2AttackableAIScript
 		super(-1, EvoMonsters.class.getSimpleName(), "ai");
 		int[] temp =
 		{
-			20830,
-			21067,
-			21062,
-			20831,
-			21070
+			50001,
+			50003,
+			50005,
+			50007,
+			50009
 		};
 		registerMobs(temp);
 	}
