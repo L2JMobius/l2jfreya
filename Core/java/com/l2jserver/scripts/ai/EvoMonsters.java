@@ -17,50 +17,171 @@ package com.l2jserver.scripts.ai;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.l2jserver.gameserver.ai.CtrlIntention;
 import com.l2jserver.gameserver.model.actor.L2Attackable;
+import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.network.clientpackets.Say2;
+import com.l2jserver.gameserver.network.serverpackets.CreatureSay;
 import com.l2jserver.scripts.L2AttackableAIScript;
+import com.l2jserver.util.Rnd;
 
 /**
- * Angel spawns...when one of the angels in the keys dies, the other angel will spawn.
+ * @author Slyce
  */
 public class EvoMonsters extends L2AttackableAIScript
 {
-	
-	private static final Map<Integer, Integer> ANGELSPAWNS = new HashMap<>();
+	private static final Map<Integer, Integer[]> MOBSPAWNS = new HashMap<>();
 	static
 	{
-		ANGELSPAWNS.put(50001, 50002);
-		ANGELSPAWNS.put(50003, 50004);
-		ANGELSPAWNS.put(50005, 50006);
-		ANGELSPAWNS.put(50007, 50008);
-		ANGELSPAWNS.put(50009, 50010);
+		MOBSPAWNS.put(51001, new Integer[]
+		{
+			51002,
+			100,
+			100,
+			-1
+		}); // Fallen Orc Shaman -> Sharp Talon Tiger (always polymorphs)
+		MOBSPAWNS.put(51002, new Integer[]
+		{
+			51003,
+			100,
+			100,
+			0
+		}); // Ol Mahum Transcender 1st stage
+		MOBSPAWNS.put(51003, new Integer[]
+		{
+			51004,
+			100,
+			100,
+			1
+		}); // Ol Mahum Transcender 2nd stage
+		MOBSPAWNS.put(51004, new Integer[]
+		{
+			51005,
+			100,
+			100,
+			2
+		}); // Ol Mahum Transcender 3rd stage
+		MOBSPAWNS.put(51005, new Integer[]
+		{
+			51006,
+			100,
+			100,
+			0
+		}); // Cave Ant Larva -> Cave Ant
+		MOBSPAWNS.put(51006, new Integer[]
+		{
+			51007,
+			100,
+			100,
+			-1
+		}); // Cave Ant Larva -> Cave Ant (always polymorphs)
+		MOBSPAWNS.put(51007, new Integer[]
+		{
+			51008,
+			100,
+			100,
+			-1
+		}); // Cave Ant Larva -> Cave Ant Soldier (always polymorphs)
+		MOBSPAWNS.put(51008, new Integer[]
+		{
+			51009,
+			100,
+			100,
+			1
+		}); // Cave Ant -> Cave Ant Soldier
+		MOBSPAWNS.put(51009, new Integer[]
+		{
+			51010,
+			100,
+			100,
+			2
+		}); // Cave Ant Soldier -> Cave Noble Ant
+		MOBSPAWNS.put(51010, new Integer[]
+		{
+			51011,
+			100,
+			100,
+			-1
+		}); // Claws of Splendor
+		MOBSPAWNS.put(51011, new Integer[]
+		{
+			51012,
+			100,
+			100,
+			-1
+		}); // Anger of Splendor
+		MOBSPAWNS.put(51012, new Integer[]
+		{
+			51013,
+			100,
+			100,
+			-1
+		}); // Alliance of Splendor
+		MOBSPAWNS.put(51013, new Integer[]
+		{
+			51014,
+			100,
+			100,
+			-1
+		}); // Fang of Splendor
 	}
+	protected static final String[][] MOBTEXTS =
+	{
+		new String[]
+		{
+			"Enough fooling around. Get ready to die!",
+			"You idiot! I've just been toying with you!",
+			"Now the fun starts!"
+		},
+		new String[]
+		{
+			"I must admit, no one makes my blood boil quite like you do!",
+			"Now the battle begins!",
+			"Witness my true power!"
+		},
+		new String[]
+		{
+			"Prepare to die!",
+			"I'll double my strength!",
+			"You have more skill than I thought"
+		}
+	};
 	
 	public EvoMonsters()
 	{
 		super(-1, EvoMonsters.class.getSimpleName(), "ai");
-		int[] temp =
+		for (int id : MOBSPAWNS.keySet())
 		{
-			50001,
-			50003,
-			50005,
-			50007,
-			50009
-		};
-		registerMobs(temp);
+			super.AttackNpcs(id);
+		}
 	}
 	
 	@Override
-	public String onKill(L2Npc npc, L2PcInstance killer, boolean isPet)
+	public String onAttack(L2Npc npc, L2PcInstance attacker, int damage, boolean isPet)
 	{
-		int npcId = npc.getNpcId();
-		if (ANGELSPAWNS.containsKey(npcId))
+		if (npc.isVisible() && !npc.isDead())
 		{
-			L2Attackable newNpc = (L2Attackable) this.addSpawn(ANGELSPAWNS.get(npcId), npc);
-			newNpc.setRunning();
+			final Integer[] tmp = MOBSPAWNS.get(npc.getNpcId());
+			if (tmp != null)
+			{
+				if ((npc.getCurrentHp() <= ((npc.getMaxHp() * tmp[1]) / 100.0)) && (Rnd.get(100) < tmp[2]))
+				{
+					if (tmp[3] >= 0)
+					{
+						String text = MOBTEXTS[tmp[3]][Rnd.get(MOBTEXTS[tmp[3]].length)];
+						npc.broadcastPacket(new CreatureSay(npc.getObjectId(), Say2.ALL, npc.getName(), text));
+					}
+					npc.deleteMe();
+					L2Attackable newNpc = (L2Attackable) addSpawn(tmp[0], npc.getX(), npc.getY(), npc.getZ() + 10, npc.getHeading(), false, 0, true);
+					L2Character originalAttacker = isPet ? attacker.getPet() : attacker;
+					newNpc.setRunning();
+					newNpc.addDamageHate(originalAttacker, 0, 500);
+					newNpc.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, originalAttacker);
+				}
+			}
 		}
-		return super.onKill(npc, killer, isPet);
+		return super.onAttack(npc, attacker, damage, isPet);
 	}
 }
