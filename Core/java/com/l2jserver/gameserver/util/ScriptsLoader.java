@@ -89,6 +89,7 @@ import com.l2jserver.scripts.ai.fantasy_isle.MC_Show;
 import com.l2jserver.scripts.ai.npc.PcBangPoint.PcBangPoint;
 import com.l2jserver.scripts.ai.npc.PriestOfBlessing.PriestOfBlessing;
 import com.l2jserver.scripts.custom.EchoCrystals.EchoCrystals;
+import com.l2jserver.scripts.custom.EvoMonster.EvoMonsters;
 import com.l2jserver.scripts.custom.HeroCirclet.HeroCirclet;
 import com.l2jserver.scripts.custom.HeroWeapon.HeroWeapon;
 import com.l2jserver.scripts.custom.MissQueen.MissQueen;
@@ -278,6 +279,7 @@ public class ScriptsLoader
 		SkillTransferValidator.class,
 		SubClassSkills.class,
 		HideAndSeek.class,
+		EvoMonsters.class,
 		// Unique NPC created for L2Winter. Contact us for test it or buy it.
 		// Multiclass.class,
 	};

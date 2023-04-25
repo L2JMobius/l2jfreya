@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.l2jserver.scripts.ai;
+package com.l2jserver.scripts.custom.EvoMonster;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,56 +40,56 @@ public class EvoMonsters extends L2AttackableAIScript
 			51002,
 			100,
 			100,
-			-1
+			0
 		}); // Fallen Orc Shaman -> Sharp Talon Tiger (always polymorphs)
 		MOBSPAWNS.put(51002, new Integer[]
 		{
 			51003,
 			100,
 			100,
-			0
+			1
 		}); // Ol Mahum Transcender 1st stage
 		MOBSPAWNS.put(51003, new Integer[]
 		{
 			51004,
 			100,
 			100,
-			1
+			2
 		}); // Ol Mahum Transcender 2nd stage
 		MOBSPAWNS.put(51004, new Integer[]
 		{
 			51005,
 			100,
 			100,
-			2
+			3
 		}); // Ol Mahum Transcender 3rd stage
 		MOBSPAWNS.put(51005, new Integer[]
 		{
 			51006,
 			100,
 			100,
-			0
+			4
 		}); // Cave Ant Larva -> Cave Ant
 		MOBSPAWNS.put(51006, new Integer[]
 		{
 			51007,
 			100,
 			100,
-			-1
+			5
 		}); // Cave Ant Larva -> Cave Ant (always polymorphs)
 		MOBSPAWNS.put(51007, new Integer[]
 		{
 			51008,
 			100,
 			100,
-			-1
+			6
 		}); // Cave Ant Larva -> Cave Ant Soldier (always polymorphs)
 		MOBSPAWNS.put(51008, new Integer[]
 		{
 			51009,
 			100,
 			100,
-			1
+			7
 		}); // Cave Ant -> Cave Ant Soldier
 		MOBSPAWNS.put(51009, new Integer[]
 		{
@@ -103,28 +103,28 @@ public class EvoMonsters extends L2AttackableAIScript
 			51011,
 			100,
 			100,
-			-1
+			8
 		}); // Claws of Splendor
 		MOBSPAWNS.put(51011, new Integer[]
 		{
 			51012,
 			100,
 			100,
-			-1
+			9
 		}); // Anger of Splendor
 		MOBSPAWNS.put(51012, new Integer[]
 		{
 			51013,
 			100,
 			100,
-			-1
+			10
 		}); // Alliance of Splendor
 		MOBSPAWNS.put(51013, new Integer[]
 		{
 			51014,
 			100,
 			100,
-			-1
+			11
 		}); // Fang of Splendor
 	}
 	protected static final String[][] MOBTEXTS =
