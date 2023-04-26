@@ -22,13 +22,11 @@ import com.l2jserver.gameserver.model.actor.L2Attackable;
 import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
-import com.l2jserver.gameserver.network.clientpackets.Say2;
-import com.l2jserver.gameserver.network.serverpackets.CreatureSay;
 import com.l2jserver.scripts.L2AttackableAIScript;
 import com.l2jserver.util.Rnd;
 
 /**
- * @author Slyce
+ * @author fusion
  */
 public class EvoMonsters extends L2AttackableAIScript
 {
@@ -127,31 +125,10 @@ public class EvoMonsters extends L2AttackableAIScript
 			11
 		}); // Fang of Splendor
 	}
-	protected static final String[][] MOBTEXTS =
-	{
-		new String[]
-		{
-			"Enough fooling around. Get ready to die!",
-			"You idiot! I've just been toying with you!",
-			"Now the fun starts!"
-		},
-		new String[]
-		{
-			"I must admit, no one makes my blood boil quite like you do!",
-			"Now the battle begins!",
-			"Witness my true power!"
-		},
-		new String[]
-		{
-			"Prepare to die!",
-			"I'll double my strength!",
-			"You have more skill than I thought"
-		}
-	};
 	
 	public EvoMonsters()
 	{
-		super(-1, EvoMonsters.class.getSimpleName(), "ai");
+		super(-1, EvoMonsters.class.getSimpleName(), "custom/EvoMonster");
 		for (int id : MOBSPAWNS.keySet())
 		{
 			super.AttackNpcs(id);
@@ -168,20 +145,16 @@ public class EvoMonsters extends L2AttackableAIScript
 			{
 				if ((npc.getCurrentHp() <= ((npc.getMaxHp() * tmp[1]) / 100.0)) && (Rnd.get(100) < tmp[2]))
 				{
-					if (tmp[3] >= 0)
-					{
-						String text = MOBTEXTS[tmp[3]][Rnd.get(MOBTEXTS[tmp[3]].length)];
-						npc.broadcastPacket(new CreatureSay(npc.getObjectId(), Say2.ALL, npc.getName(), text));
-					}
-					npc.deleteMe();
-					L2Attackable newNpc = (L2Attackable) addSpawn(tmp[0], npc.getX(), npc.getY(), npc.getZ() + 10, npc.getHeading(), false, 0, true);
-					L2Character originalAttacker = isPet ? attacker.getPet() : attacker;
-					newNpc.setRunning();
-					newNpc.addDamageHate(originalAttacker, 0, 500);
-					newNpc.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, originalAttacker);
 				}
+				npc.deleteMe();
+				L2Attackable newNpc = (L2Attackable) addSpawn(tmp[0], npc.getX(), npc.getY(), npc.getZ() + 10, npc.getHeading(), false, 0, true);
+				L2Character originalAttacker = isPet ? attacker.getPet() : attacker;
+				newNpc.setRunning();
+				newNpc.addDamageHate(originalAttacker, 0, 500);
+				newNpc.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, originalAttacker);
 			}
 		}
+		
 		return super.onAttack(npc, attacker, damage, isPet);
 	}
 }
